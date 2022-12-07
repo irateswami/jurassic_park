@@ -1,12 +1,19 @@
-# Problem Statement
+# About
+This is a repo that I created to build an api, end to end, for a video to give an example of many different GoLang design paradigms.
+
+# Reference
+TODO : here is where the api reference docs will go.
+
+# Specs
+## Problem Statement
 It's 1993 and you're the lead software developer for the new Jurassic Park! Park
 operations needs a system to keep track of the different cages around the park and the
 different dinosaurs in each one. You'll need to develop a JSON formatted RESTful API
 to allow the builders to create new cages. It will also allow doctors and scientists the
 ability to edit/retrieve the statuses of dinosaurs and cages.
 
-# Requirements
-## Business Requirements
+## Requirements
+### Business Requirements
 - All requests should respond with the correct HTTP status codes and a response, if necessary, representing either the success or error conditions.
 - Each dinosaur must have a name.
 - Each dinosaur is considered an herbivore or a carnivore, depending on its species.
@@ -16,14 +23,14 @@ ability to edit/retrieve the statuses of dinosaurs and cages.
 - Use Carnivore dinosaurs like Tyrannosaurus, Velociraptor, Spinosaurus and Megalosaurus.
 - Use Herbivores like Brachiosaurus, Stegosaurus, Ankylosaurus and Triceratops.
 
-## Technical Requirements
+### Technical Requirements
 - You are allowed to use scaffolding technology.
 - This project should be done with version Golang 1.19 or newer.
 - This project can use the Gin API framework or similar technology.
 - This should be done using version control, preferably git.
 - The project should include a README that addresses anything you may not have completed. It should also address what additional changes you might need to make if the application were intended to run in a concurrent environment. Any other comments or thoughts about the project are also welcome.
 
-## Bonus
+### Bonus
 - Cages have a maximum capacity for how many dinosaurs it can hold.
 - Cages know how many dinosaurs are contained.
 - Cages have a power status of ACTIVE or DOWN.
