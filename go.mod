@@ -3,6 +3,7 @@ module github.com/irateswami/jurassic_park
 go 1.19
 
 require (
+	github.com/doug-martin/goqu/v9 v9.18.0
 	github.com/gin-gonic/gin v1.8.1
 	github.com/mattn/go-sqlite3 v1.14.16
 	go.uber.org/zap v1.24.0

@@ -20,17 +20,19 @@ func run() error {
 	router.GET("/dino", func(ctx *gin.Context) {
 		handlers.GetDino(storage, ctx)
 	})
-	router.PUT("/dino", func(ctx *gin.Context) {})
+	router.PUT("/dino", func(ctx *gin.Context) {
+		handlers.PutDino(storage, ctx)
+	})
 	router.POST("/dino", func(ctx *gin.Context) {})
 	router.DELETE("/dino", func(ctx *gin.Context) {})
 
 	// Cages
-	router.GET("/cages", func(ctx *gin.Context) {
+	router.GET("/cage", func(ctx *gin.Context) {
 		handlers.GetDino(storage, ctx)
 	})
-	router.PUT("/cages", func(ctx *gin.Context) {})
-	router.POST("/cages", func(ctx *gin.Context) {})
-	router.DELETE("/cages", func(ctx *gin.Context) {})
+	router.PUT("/cage", func(ctx *gin.Context) {})
+	router.POST("/cage", func(ctx *gin.Context) {})
+	router.DELETE("/cage", func(ctx *gin.Context) {})
 
 	return router.Run()
 }

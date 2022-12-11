@@ -1,7 +1,7 @@
 -- +goose Up
 -- +goose StatementBegin
 SELECT 'up SQL query';
-create table dinosaurs(
+create table dinosaurs (
     id integer not null primary key,
     species text,
     name text,

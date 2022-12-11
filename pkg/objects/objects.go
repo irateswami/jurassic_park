@@ -30,4 +30,5 @@ type Dinosaur struct {
 	Name       string `json:"name" db:"name"`
 	Species    string `json:"species" db:"species"`
 	HerbOrCarn uint8  `json:"herb_or_carn" db:"herb_or_carn"`
+	Cage       uint8  `json:"cage" db:"cage"`
 }
