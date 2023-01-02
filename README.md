@@ -4,6 +4,10 @@ This is a repo that I created to build an api, end to end, for a video to give a
 # Reference
 TODO : here is where the api reference docs will go.
 
+## Cages
+### PUT
+1. You're required to input an id, everything else will either be empty or 0, false, etc.
+
 # Specs
 ## Problem Statement
 It's 1993 and you're the lead software developer for the new Jurassic Park! Park

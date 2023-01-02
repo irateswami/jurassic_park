@@ -28,9 +28,11 @@ func run() error {
 
 	// Cages
 	router.GET("/cage", func(ctx *gin.Context) {
-		handlers.GetDino(storage, ctx)
+		handlers.GetCage(storage, ctx)
 	})
-	router.PUT("/cage", func(ctx *gin.Context) {})
+	router.PUT("/cage", func(ctx *gin.Context) {
+		handlers.PutCage(storage, ctx)
+	})
 	router.POST("/cage", func(ctx *gin.Context) {})
 	router.DELETE("/cage", func(ctx *gin.Context) {})
 

@@ -1,19 +1,20 @@
 -- +goose Up
 -- +goose StatementBegin
 SELECT 'up SQL query';
-create table dinosaurs (
-    id integer not null primary key,
-    species text,
+create table if not exists dinosaurs (
+    id text not null primary key,
     name text,
-    herb_or_carn integer,
-    cage integer,
+    species text,
+    cage text,
     FOREIGN KEY(cage) REFERENCES cages(id)
 );
 
-create table cages (
-    id integer not null primary key,
+create table if not exists cages (
+    id text not null primary key,
     species text,
-    capacity integer
+    max_capacity integer not null,
+    carnivore boolean,
+    active boolean not null
 );
 -- +goose StatementEnd
 
